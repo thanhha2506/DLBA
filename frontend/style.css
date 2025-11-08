@@ -1,0 +1,27 @@
+/* Main Layout */
+.stApp {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Upload Section */
+input[type=file] {
+    color: #333;
+}
+
+/* Prediction Button */
+button[data-testid="baseButton-primary"] {
+    background-color: #6abd45 !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+
