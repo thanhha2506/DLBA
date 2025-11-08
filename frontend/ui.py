@@ -3,6 +3,7 @@ import asyncio
 from components import render_header, render_upload_images, render_footer
 from api import predict_image
 from message import display_results
+import os
 
 # --- Page Config ---
 st.set_page_config(
@@ -19,7 +20,7 @@ def load_css(file_name):
     except FileNotFoundError:
         st.warning("⚠️ CSS file not found. Using default Streamlit style.")
 
-load_css("style.css")
+load_css(os.path.join(os.path.dirname(__file__), "style.css"))
 
 # --- UI Layout ---
 render_header()
@@ -38,5 +39,6 @@ if image_file:
                 st.error(f" Error: {e}")
 
 render_footer()
+
 
 
