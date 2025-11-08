@@ -1,7 +1,7 @@
 import streamlit as st
 import asyncio
 from components import render_header, render_upload_images, render_footer
-from api import predict_image
+from frontend.api import predict_image
 from message import display_results
 
 # --- Page Config ---
@@ -38,3 +38,4 @@ if image_file:
                 st.error(f" Error: {e}")
 
 render_footer()
+
